@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fake Blog</title>
+    </head>
+    <body>
+        <h1>Fake Blog and having fun!!!</h1>
+        <p>
+            Bacon ipsum dolor amet pork landjaeger hamburger pork loin prosciutto venison ball tip ham tenderloin. Boudin beef ribs pastrami salami, tenderloin capicola landjaeger bresaola pork ball tip. Turducken tenderloin chuck short loin, ham hock prosciutto venison beef jerky pig meatball. Frankfurter brisket kevin pastrami salami short ribs picanha boudin sausage. Shank rump bacon, pork loin capicola jerky tenderloin tail turducken boudin prosciutto. Ham hock hamburger ground round pork loin meatloaf flank turducken short ribs andouille.
+        </p>
+        <div class="img">
+            <img src="data:image/jpeg;base64,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"/>
+        </div>
+        <table>
+            <tr>
+                <th>
+                    Meat that I love
+                </th>
+                <th>
+                    Meat that I Hate
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Bacon</li>
+                        <li>Strip Steak</li>
+                        <li>Rib Eye</li>
+                        <li>Round Bottom Roast</li>
+
+                </td>
+                <td>
+                    <ol>
+                        <li>pot roast</li>
+                        <li>chicken nuggets</li>
+                        <li>pork tenderloin</li>
+                        <li>jellyfish</li>
+                    </ol>
+                </td>
+            </tr>
+
+        </table>
+        <form class="" action="index.html" method="post">
+            <select class="" name="Grade">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="F">Bad Bongos</option>
+            </select>
+            <input type="text" name="name" value="favorite meat">
+            <input type="checkbox" name="meat" value="favorite meat">Shrimp
+            <input type="checkbox" name="meat" value="favorite meat">Deer
+            <input type="checkbox" name="meat" value="favorite meat">Lamb
+            <input type="radio" name="name" value="She loves me">she loves me
+            <input type="radio" name="name" value="She loves me">she loves me not
+            <input type="submit" name="name" value="Love Songs">
+        </form>
+    </body>
+</html>
