@@ -65,3 +65,6 @@ Thumbs.db
 
 # Ignore Normalize.css
 *normalize.css
+
+# Ignore Exam folder
+/Exams
