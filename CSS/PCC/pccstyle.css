@@ -1,0 +1,142 @@
+*{
+font-family: sans-serif;
+
+}
+
+#wrapper{
+
+padding: 2px;
+width: 1000px;
+}
+
+#topheader{
+display: inline-flex;
+}
+
+#headermenu{
+padding: 15px 20px 15px 20px;
+background-color: #ccd5d4;
+}
+
+#maincontent{
+    display: inline-flex;
+}
+
+#mainpara{
+margin-top: 16px;
+background-color: #454a48;
+margin-right: 20px;
+
+}
+
+#bottomcontent{
+
+}
+
+.contentcard{
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 13px 2px 13px;
+    width: 222px;
+    background-color: white;
+    height: 254px;
+}
+
+.centerbox{
+
+}
+
+.readmore{
+    background-color: #edeb28;
+}
+
+.yellow{
+    color: #edeb28;
+}
+
+.nounderline{
+    text-decoration: none;
+}
+
+header{
+
+
+}
+
+main{
+background-color: black;
+padding-bottom: 3px;
+}
+
+h2{
+margin-left: 261px;
+padding-right: 20px;
+}
+
+h3{
+background-color: #edeb28;
+margin-top: 0px;
+padding: 5px 0px 5px 0px;
+}
+
+h4{
+
+}
+
+h5{
+font-size: 9px;
+}
+
+figure{
+background-color: white;
+padding: 4px;
+margin-bottom: 0px;
+}
+
+button img{
+width: 45px;
+height: 12px;
+margin-left: 15px;
+}
+
+button + h5{
+    display: inline;
+}
+
+#headermenu a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #606161;
+    border-right: solid #606161 2px;
+
+}
+
+#bottomcontent h4{
+background-color: #edeb28;
+margin: 0px;
+padding: 5px 0px 5px 15px;
+}
+
+#bottomcontent p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+#mainpara h4{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#mainpara p{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.contentcard button{
+margin-left: 110px;
+margin-bottom: 5px;
+}
