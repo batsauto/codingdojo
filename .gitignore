@@ -64,4 +64,4 @@ Thumbs.db
 /phantomas
 
 # Ignore Normalize.css
-/normalize.css
+*normalize.css
