@@ -1,0 +1,36 @@
+*{
+
+}
+
+#wrapper{
+    background-color: rgba(144, 144, 144, 0.54);
+}
+
+.featurebox{
+    margin: 5px 10px 5px 300px;
+    padding: 25px;
+    text-align: 40%;
+}
+
+.contentbox{
+    display: inline;
+}
+
+.contentbox > button{
+    border: solid 2px rgb(10, 106, 250);
+    background-color: rgb(12, 77, 175);
+    border-radius: 6px;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    font-size: 14px;
+    margin-right: 35px;
+}
+
+.contentbox > p{
+    display: inline;
+}
+
+hr{
+    border: solid 3px rgb(23, 44, 134);
+}
