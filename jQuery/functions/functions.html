@@ -3,14 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>jQuery Functions</title>
-    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
     $(document).ready(function(){
         //your jQuery code goes here
-
+        console.log(10);
+        $('#click > div > button').click(function() {
+            alert("handler for .click() called");
+        });
 
     });
     </script>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="functionsstyle.css">
 </head>
 <body>
@@ -20,51 +24,196 @@
         </header>
         <main>
 
-            <div class="featurebox" id=".click">
-                <h2>.Click</h2>
+            <div class="featurebox" id="click">
+                <h2>.click</h2>
                 <div class="contentbox">
-                    <button type="button" name=".click">Click</button>
+                    <button type="button">Click</button>
                     <p>
                         Click the button to "click"
                     </p>
                 </div>
             </div>
             <hr>
-            <div class="featurebox" id=".focus">
-                <h2>.Focus</h2>
+            <div class="featurebox" id="focus">
+                <h2>.focus</h2>
                 <div class="contentbox">
-                    <button type="button" name=".focus">Focus</button>
+                    <button type="button">Focus</button>
                     <p>
-                        Click the button to "Focus"
+                        Click the button to "focus"
                     </p>
                 </div>
             </div>
             <hr>
-            <div class="featurebox" id=".addclass">
-                <h2>.AddClass</h2>
+            <div class="featurebox" id="addclass">
+                <h2>.addClass</h2>
                 <div class="contentbox">
-                    <button type="button" name=".addclass">AddClass</button>
+                    <button type="button">AddClass</button>
                     <p>
-                        Click the button to "add class"
+                        Click the button to "addClass"
                     </p>
                 </div>
             </div>
             <hr>
-            <div class="featurebox" id=".val">
-                <h2>.Val</h2>
+            <div class="featurebox" id="val">
+                <h2>.val</h2>
                 <div class="contentbox">
-                    <button type="button" name=".val">Val</button>
+                    <button type="button">Val</button>
                     <p>
-                        Click the button to "Val"
+                        Click the button to "val"
                     </p>
                 </div>
             </div>
             <hr>
-
-
-
-
-
+            <div class="featurebox" id="text">
+                <h2>.text</h2>
+                <div class="contentbox">
+                    <button type="button">Text</button>
+                    <p>
+                        Click the button to "text"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="attr">
+                <h2>.attr</h2>
+                <div class="contentbox">
+                    <button type="button">Attr</button>
+                    <p>
+                        Click the button to "attr"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="html">
+                <h2>.html</h2>
+                <div class="contentbox">
+                    <button type="button">Html</button>
+                    <p>
+                        Click the button to "html"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="data">
+                <h2>.data</h2>
+                <div class="contentbox">
+                    <button type="button">Data</button>
+                    <p>
+                        Click the button to "data"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="before">
+                <h2>.before</h2>
+                <div class="contentbox">
+                    <button type="button">Before</button>
+                    <p>
+                        Click the button to "before"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="after">
+                <h2>.after</h2>
+                <div class="contentbox">
+                    <button type="button">After</button>
+                    <p>
+                        Click the button to "after"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="append">
+                <h2>.append</h2>
+                <div class="contentbox">
+                    <button type="button">Append</button>
+                    <p>
+                        Click the button to "append"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="show">
+                <h2>.show</h2>
+                <div class="contentbox">
+                    <button type="button">Show</button>
+                    <p>
+                        Click the button to "show"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="hide">
+                <h2>.hide</h2>
+                <div class="contentbox">
+                    <button type="button">Hide</button>
+                    <p>
+                        Click the button to "hide"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="toggle">
+                <h2>.toogle</h2>
+                <div class="contentbox">
+                    <button type="button">Toggle</button>
+                    <p>
+                        Click the button to "toggle"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="fadein">
+                <h2>.fadeIn</h2>
+                <div class="contentbox">
+                    <button type="button">FadeIn</button>
+                    <p>
+                        Click the button to "fadeIn"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="fadeout">
+                <h2>.fadeOut</h2>
+                <div class="contentbox">
+                    <button type="button">FadeOut</button>
+                    <p>
+                        Click the button to "fadeOut"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="slideDown">
+                <h2>.slideDown</h2>
+                <div class="contentbox">
+                    <button type="button">SlideDown</button>
+                    <p>
+                        Click the button to "slideDown"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="slideUp">
+                <h2>.slideUp</h2>
+                <div class="contentbox">
+                    <button type="button">SlideUp</button>
+                    <p>
+                        Click the button to "slideUp"
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="featurebox" id="slideToggle">
+                <h2>.slideToggle</h2>
+                <div class="contentbox">
+                    <button type="button">SlideToggle</button>
+                    <p>
+                        Click the button to "slideToggle"
+                    </p>
+                </div>
+            </div>
+            <hr>
 
         </main>
         <footer>
