@@ -68,3 +68,6 @@ Thumbs.db
 
 # Ignore Exam folder
 /Exams
+
+# Ignore jQuery
+*jquery-3.1.0.js
