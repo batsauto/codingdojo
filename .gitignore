@@ -71,3 +71,6 @@ Thumbs.db
 
 # Ignore jQuery
 *jquery-3.1.0.js
+
+# Ignore jQuery/debugging folder
+/jQuery/debugging
