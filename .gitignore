@@ -64,13 +64,13 @@ Thumbs.db
 /phantomas
 
 # Ignore Normalize.css
-*normalize.css
+# *normalize.css
 
 # Ignore Exam folder
 /Exams
 
 # Ignore jQuery
-*jquery-3.1.0.js
+# *jquery-3.1.0.js
 
 # Ignore jQuery/debugging folder
 /jQuery/debugging
