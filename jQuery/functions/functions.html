@@ -3,17 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>jQuery Functions</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        //your jQuery code goes here
-        console.log(10);
-        $('#click > div > button').click(function() {
-            alert("handler for .click() called");
-        });
-
-    });
-    </script>
+    <script src="jquery-3.1.0.js"></script>
+    <script src="function.js"></script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="functionsstyle.css">
 </head>
@@ -39,7 +30,7 @@
                 <div class="contentbox">
                     <button type="button">Focus</button>
                     <p>
-                        Click the button to "focus"
+                        now you see me!!!!!
                     </p>
                 </div>
             </div>
@@ -49,7 +40,7 @@
                 <div class="contentbox">
                     <button type="button">AddClass</button>
                     <p>
-                        Click the button to "addClass"
+                        Click the button to "addClass" redbackground
                     </p>
                 </div>
             </div>
@@ -57,9 +48,12 @@
             <div class="featurebox" id="val">
                 <h2>.val</h2>
                 <div class="contentbox">
-                    <button type="button">Val</button>
+                    <select id="single">
+                        <option>Single</option>
+                        <option>Single2</option>
+                    </select>
                     <p>
-                        Click the button to "val"
+                        make a slection to see the "val"
                     </p>
                 </div>
             </div>
@@ -68,8 +62,11 @@
                 <h2>.text</h2>
                 <div class="contentbox">
                     <button type="button">Text</button>
+                    <p class="red">
+                        Click the button to get just the "text"
+                    </p>
                     <p>
-                        Click the button to "text"
+
                     </p>
                 </div>
             </div>
@@ -79,8 +76,9 @@
                 <div class="contentbox">
                     <button type="button">Attr</button>
                     <p>
-                        Click the button to "attr"
+                        Click the button to get src "attr"
                     </p>
+                    <iframe src="https://gfycat.com/ifr/ImperturbableAppropriateChickadee" frameborder="0" scrolling="no" width="320" height="182" allowfullscreen></iframe>
                 </div>
             </div>
             <hr>
