@@ -1,0 +1,27 @@
+*{
+    
+}
+
+#wrapper{
+    width: 1000px;
+    margin: auto;
+    background-color: rgba(241, 241, 242, 0.22);
+}
+
+.contentcard{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.contentcard > img{
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px rgb(184, 122, 18);
+}
+
+button{
+    margin-top: 20px;
+}
