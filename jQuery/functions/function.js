@@ -30,6 +30,10 @@ $(document).ready(function(){
         $( "#attr > div > p" ).text( title );
     });
 
+    $('#html > div > button').click(function() {
+      $("#html > div > p").html('<p> This paragraph is a new HTML element </p>')
+
+    });
     // I am moving on from this assingment. I will return later to finish for sure but it took me a really long time to get this far.
 
 
