@@ -1,22 +1,22 @@
 $(document).ready(function() {
     $('form').submit(function() {
         $('#contactContainer').append("<div>" + "</div>");
-        $(this).addClass("contactCard");
+        $('#contactContainer > div').addClass("contactCard");
         return false;
     });
-    // $('form').submit(function() {
-	// 	$("#users").append("<tr>" +
-	// 			"<td>" + $("#first_name").val() + "</td>" +
-	// 			"<td>" + $("#last_name").val() + "</td>" +
-	// 			"<td>" + $("#email").val() + "</td>"+
-    //         	"<td>" + $("#contact").val() + "</td>"+
-	// 	"</tr>");
-    //
-    //     $(".text_input").val("");
+    $('form').on('submit',(function() {
+    $(".contactCard").append("<h3>"
+				+ $("#first_name").val()
+				+ $("#last_name").val()
+        + "</h3>"
+        + "<p>"
+        +  $("#description").val()
+        + "</p>"
 
-//        return false;
 
-//    });
+
+    );
+    }));
 
 
 
