@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="this page is dedicated to creating an new user">
+    <title>New User Assingment</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="newUserstyle.css">
+    <script type="text/javascript" src="jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="newUser.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <table id="users">
+                    <thead>
+                        <th>
+                            First Name
+                        </th>
+                        <th>
+                            Last Name
+                        </th>
+                        <th>
+                            Email Address
+                        </th>
+                        <th>
+                            Contact #
+                        </th>
+                    </thead>
+            </table>
+        </header>
+        <main>
+            <h2>Add A User</h2>
+            <form id="userContact" action="process.php" method="post">
+                First Name <input class="text_input" id="first_name" type="text" name="first_name" value="">
+                Last Name <input class="text_input" id="last_name" type="text" name="last_name" value="">
+                Email Address <input class="text_input" id="email" type="text" name="email_address" value="">
+                Contact # <input class="text_input" id="contact" type="text" name="contact_number" value="">
+                <input type="submit" value="Submit!!">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
