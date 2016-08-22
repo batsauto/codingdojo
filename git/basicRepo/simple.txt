@@ -1,0 +1,39 @@
+Janays-MacBook-Air:~ christianbarrow$ cd Documents/basic_repo/
+Janays-MacBook-Air:basic_repo christianbarrow$ echo "# basic_repo" >> README.md
+Janays-MacBook-Air:basic_repo christianbarrow$ git init
+Initialized empty Git repository in /Users/christianbarrow/Documents/basic_repo/.git/
+Janays-MacBook-Air:basic_repo christianbarrow$ git add README.md
+Janays-MacBook-Air:basic_repo christianbarrow$ git commit -m "first commit"
+[master (root-commit) d1836c3] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Janays-MacBook-Air:basic_repo christianbarrow$ git remote add origin https://github.com/batsauto/basic_repo.git
+Janays-MacBook-Air:basic_repo christianbarrow$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 220 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/batsauto/basic_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Janays-MacBook-Air:basic_repo christianbarrow$ touch index.html
+Janays-MacBook-Air:basic_repo christianbarrow$ touch style.css
+Janays-MacBook-Air:basic_repo christianbarrow$ git add .
+Janays-MacBook-Air:basic_repo christianbarrow$ git commit -m "added index.html with some content and style.css with no styling yet"
+[master 1215d8a] added index.html with some content and style.css with no styling yet
+ 3 files changed, 444 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 normalize.css
+ create mode 100644 style.css
+Janays-MacBook-Air:basic_repo christianbarrow$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 3.13 KiB | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/batsauto/basic_repo.git
+   d1836c3..1215d8a  master -> master
+Janays-MacBook-Air:basic_repo christianbarrow$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Janays-MacBook-Air:basic_repo christianbarrow$

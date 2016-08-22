@@ -1,0 +1,21 @@
+Janays-MacBook-Air:~ christianbarrow$ cd Documents/git_demo/
+Janays-MacBook-Air:git_demo christianbarrow$ git clone https://github.com/batsauto/git_demo.git
+Cloning into 'git_demo'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 3
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+Janays-MacBook-Air:git_demo christianbarrow$ git add .
+Janays-MacBook-Air:git_demo christianbarrow$ git commit -m "made some changes to demo_index.html"
+[master 7963add] made some changes to demo_index.html
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+Janays-MacBook-Air:git_demo christianbarrow$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 418 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/batsauto/git_demo.git
+   199a72c..7963add  master -> master
+Janays-MacBook-Air:git_demo christianbarrow$
