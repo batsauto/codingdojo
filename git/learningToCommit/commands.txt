@@ -1,0 +1,59 @@
+
+Janays-MacBook-Air:~ christianbarrow$ cd Desktop/
+Janays-MacBook-Air:Desktop christianbarrow$ mkdir test
+Janays-MacBook-Air:Desktop christianbarrow$ cd test/
+Janays-MacBook-Air:test christianbarrow$ touch index.html
+Janays-MacBook-Air:test christianbarrow$ touch style.css
+Janays-MacBook-Air:test christianbarrow$ git init
+Initialized empty Git repository in /Users/christianbarrow/Desktop/test/.git/
+Janays-MacBook-Air:test christianbarrow$ git add .
+Janays-MacBook-Air:test christianbarrow$ git commit -m "first commit"
+[master (root-commit) bcb656a] first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+ Janays-MacBook-Air:test christianbarrow$ git add index.html
+Janays-MacBook-Air:test christianbarrow$ git commit -m "update.hml"
+[master 6997ae5] update.hml
+ 1 file changed, 1 insertion(+)
+Janays-MacBook-Air:test christianbarrow$ git add style.css
+Janays-MacBook-Air:test christianbarrow$ git commit -m "update css"
+[master 272b4d0] update css
+ 1 file changed, 1 insertion(+)
+Janays-MacBook-Air:test christianbarrow$ git log
+commit 272b4d044716e730ce3e0616e1be8b459f87ca01
+Author: batsauto <cfbarrow@gmail.com>
+Date:   Sat Aug 20 23:21:05 2016 -0700
+
+    update css
+
+commit 6997ae55dc6e3c6d9394403f4ed8a30bb9ba81f1
+Author: batsauto <cfbarrow@gmail.com>
+Date:   Sat Aug 20 23:20:35 2016 -0700
+
+    update.hml
+
+commit bcb656a1e8af145946a334d252ed32bbaf4bc601
+Author: batsauto <cfbarrow@gmail.com>
+Date:   Sat Aug 20 23:17:44 2016 -0700
+
+    first commit
+Janays-MacBook-Air:test christianbarrow$ git revert -n HEAD
+Janays-MacBook-Air:test christianbarrow$ git status
+On branch master
+You are currently reverting commit 272b4d0.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   style.css
+
+Janays-MacBook-Air:test christianbarrow$ git add style.css
+Janays-MacBook-Air:test christianbarrow$ git commit -m "new changes to style css"
+[master 3664acc] new changes to style css
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Janays-MacBook-Air:test christianbarrow$ git status
+On branch master
+nothing to commit, working directory clean

@@ -1,0 +1,11 @@
+#wrapper{
+width: 375px;
+}
+
+#sortable {
+     margin: 0;
+     padding: 0;
+ }
+#sortable li {
+    margin: auto;
+}

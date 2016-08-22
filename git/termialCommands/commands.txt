@@ -1,0 +1,28 @@
+Janays-MacBook-Air:~ christianbarrow$ cd
+Janays-MacBook-Air:~ christianbarrow$ cd Desktop/
+Janays-MacBook-Air:Desktop christianbarrow$ mkdir Test
+Janays-MacBook-Air:Desktop christianbarrow$ cd test/
+Janays-MacBook-Air:test christianbarrow$ touch index.html
+Janays-MacBook-Air:test christianbarrow$ touch style.css
+Janays-MacBook-Air:test christianbarrow$ touch commands.txt
+Janays-MacBook-Air:test christianbarrow$ cp index.html index_2.html
+Janays-MacBook-Air:test christianbarrow$ cd
+Janays-MacBook-Air:~ christianbarrow$ cd Desktop/
+Janays-MacBook-Air:Desktop christianbarrow$ mkdir destination
+Janays-MacBook-Air:Desktop christianbarrow$ cd test
+Janays-MacBook-Air:test christianbarrow$ mv index_2.html ../index_2.html
+Janays-MacBook-Air:desktop christianbarrow$ mv index_2.html ./destination
+Janays-MacBook-Air:destination christianbarrow$ cd 
+Janays-MacBook-Air:~ christianbarrow$ cd Desktop/test
+Janays-MacBook-Air:test christianbarrow$ rm style.css
+Janays-MacBook-Air:test christianbarrow$ ls
+commands.txt	index.html
+Janays-MacBook-Air:test christianbarrow$ cd
+Janays-MacBook-Air:~ christianbarrow$ cd Desktop/destination/
+Janays-MacBook-Air:destination christianbarrow$ ls
+index_2.html
+Janays-MacBook-Air:Desktop christianbarrow$ rm -rf destination
+Janays-MacBook-Air:Desktop christianbarrow$ ls
+Test
+
+
