@@ -1,0 +1,24 @@
+header > h2, nav {
+    display: inline;
+}
+
+nav > a > img {
+    width: 50px;
+    height: 50px;
+}
+
+.contentbox {
+    display: inline-flex;
+}
+
+.nav > li > a > img {
+    max-width: 20px;
+}
+
+.nav > li > ul > li > a > img {
+    max-width: 20px;
+}
+
+.page-header {
+    margin-top: -30px;
+}
