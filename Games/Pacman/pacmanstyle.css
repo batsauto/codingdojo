@@ -1,0 +1,36 @@
+#map{
+    height: 500px;
+    width: 500px;
+}
+
+div{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    margin-bottom: -4px;
+}
+
+.wall{
+    background-color: darkblue;
+}
+
+.path{
+    background-color: black;
+    background-image: url(images/yellow-dot.png);
+    background-position: center;
+}
+
+.pacman{
+    background-image: url(images/Pacman.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.blank{
+    background-color: black;
+}
+
+#score{
+
+}
