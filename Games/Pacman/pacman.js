@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     var pacman = {
         row: 12,
-        col: 10,
+        col: 10
     };
 
     var score = 0;
