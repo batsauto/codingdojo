@@ -1,3 +1,8 @@
+header{
+    height: 160px;
+}
+
+
 header > h2, nav {
     display: inline;
 }
@@ -21,4 +26,12 @@ nav > a > img {
 
 .page-header {
     margin-top: -30px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    margin-top: -20px;
 }

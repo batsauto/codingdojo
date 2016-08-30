@@ -1,0 +1,42 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1080" measuredH="663" mockupW="1020" mockupH="643">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="60" y="20" w="1020" h="643" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="113" y="200" w="257" h="326" measuredW="620" measuredH="414" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>%24ACCOUNT/assets/daylight.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="505" y="112" w="130" h="64" measuredW="250" measuredH="104" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>%24ACCOUNT/assets/CRK.png</src>
+        <text>Logo</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TabBar" x="400" y="200" w="614" h="326" measuredW="205" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>One%2C%20Two%2C%20Three%2C%20Four</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::ButtonBar" x="334" y="573" w="241" h="35" measuredW="156" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>One%2C%20Two%2C%20Three</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::ButtonBar" x="575" y="573" w="241" h="35" measuredW="156" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>One%2C%20Two%2C%20Three</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::RoundButton" x="1016" y="581" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::RoundButton" x="1014" y="581" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

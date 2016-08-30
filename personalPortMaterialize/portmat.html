@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This page is dedicated to my materialize portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="library/normalize.css">
+    <link rel="stylesheet" href="library/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="portmatstyle.css">
+    <script type="text/javascript" src="library/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="library/materialize.js"></script>
+    <script type="text/javascript" src="portmat.js"></script>
+</head>
+<body>
+    <header class="z-depth-1">
+        <nav>
+            <div class="nav-wrapper teal lighten-2">
+                <a href="#!" class="brand-logo center"><img src="images/logo-copy1.png"/></a>
+                <!-- <a href="#" data-activates="mobile-demo" class=" right button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul> -->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+
+            <div class="col s12">
+                <div class="card-panel teal">
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="tabs hoverable">
+                                <li class="tab col s3"><a class="active" href="#test1">About Me</a></li>
+                                <li class="tab col s3"><a href="#test2">Resume</a></li>
+                                <li class="tab col s3"><a href="#test3">Contact</a></li>
+                                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                            </ul>
+                        </div>
+                        <div id="test1" class="col s12">
+                            <div class="col s12 m4 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="images/IMG_06841.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">About me<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">About Me<i class="material-icons right">close</i></span>
+                                        <p>Hello my name is Christian Barrow.
+                                            I am currently working at becoming a full stack developer through Coding Dojo. My goal is to become a self-sufficient developer.
+                                            On a perosnal note I am a husband and a father of 4 beautiful children. I love to play with my children and to watch movies with them. I love fishing and RC cars and video games.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="test2" class="col s12">
+                                <ul class="collapsible" data-collapsible="expandable">
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons">work</i>Barrow's Landscaping</div>
+                                        <div class="collapsible-body"><p>2014-Present</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons">school</i>Brigham Young University - Idaho</div>
+                                        <div class="collapsible-body"><p>2014</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons">school</i>Yuba College</div>
+                                        <div class="collapsible-body"><p>2012</p></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="test3" class="col s12">Contact</div>
+                            <div id="test4" class="col s12">Test 4</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">chat</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div>
+        </main>
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+    </body>
+    </html>
