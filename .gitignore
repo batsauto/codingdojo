@@ -74,3 +74,6 @@ Thumbs.db
 
 # Ignore jQuery/debugging folder
 /jQuery/debugging
+
+# phythonSchedule image
+pythonSchedule.tiff
