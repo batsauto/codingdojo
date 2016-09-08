@@ -26,6 +26,7 @@ users = {
 
 for key, data in users.items():
     num = 1
+    print key.title()
     for value in data:
         print num, "--", value["first_name"], value["last_name"], "--", len(value["first_name"] + value["last_name"])
         num += 1
