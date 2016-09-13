@@ -77,3 +77,6 @@ Thumbs.db
 
 # phythonSchedule image
 pythonSchedule.tiff
+
+# this project folder which contains venv
+/flaskFundamentals/hello_flask/venv
