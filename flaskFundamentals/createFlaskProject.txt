@@ -1,0 +1,26 @@
+# create project folder
+
+$ mkdir my_new_project
+$ cd my_new_project
+
+# create new virtual environment local to this folder
+
+$ virtualenv venv
+
+# after having your virtualenv created, activate it by typing:
+
+$ source venv/bin/activate # for OS
+
+# now install flask
+
+(venv) $ pip install flask
+or
+(venv) $ pip install Flask==0.10.1
+
+# to deactivate venv type
+
+(venv) $ deactivate
+$
+
+# Make sure the virtual environment for each specific project is
+# active when running your project or you may have some unexpected errors.
