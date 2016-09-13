@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Flask</title>
+    <!-- linking a css style sheet -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='landingpagestyle.css') }}">
+  </head>
+  <body>
+    <h1>here is my first landing page</h1>
+    <p>
+      thanks for visiting and i hope you come again
+    </p>
+    <button type="button" name="button"><a href="/ninjas">Ninja Page</a></button>
+    <button type="button" name="button"><a href="/dojos/new">Dojo form</a></button>
+  </body>
+</html>
