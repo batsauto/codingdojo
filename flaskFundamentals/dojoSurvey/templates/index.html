@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dojoserveystyle.css') }}">
+  </head>
+  <body>
+    <header>
+      <img src="http://www.codingdojo.com/blog/wp-content/uploads/coding_dojo_logo_black.png" alt="Coding Dojo logo" />
+      <h1>Fake Form Page</h1>
+    </header>
+    <main>
+      <form class="" action="/results" method="post">
+        <p>
+          <label>
+            Name:<input type="text" name="name">
+          </label>
+        </p>
+        <p>
+          Location: <select name="location">
+            <option value="Seattle">Seattle</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Washington DC">Washington DC</option>
+          </select>
+        </p>
+        <p>
+          Favorite Language: <select name="favLang">
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+          </select>
+        </p>
+        <p>
+          Comments: <textarea name="comments">Enter comments here!</textarea>
+        </p>
+        <p>
+          <input type="submit" value="Click here to Sumbit">
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

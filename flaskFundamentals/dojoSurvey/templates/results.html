@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Results Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dojoserveystyle.css') }}">
+  </head>
+  <body>
+    <header>
+      <img src="http://www.codingdojo.com/blog/wp-content/uploads/coding_dojo_logo_black.png" alt="Coding Dojo logo" />
+      <h1>Fake Results page</h1>
+    </header>
+    <main>
+      <h4>Submitted Info:</h4>
+      <div class="label">
+        <p>
+          Name:
+        </p>
+        <p>
+          Location:
+        </p>
+        <p>
+          Favorite Language:
+        </p>
+        <p>
+          Comments:
+        </p>
+      </div>
+      <div class="answers">
+        <p>
+          {{name}}
+        </p>
+        <p>
+          {{location}}
+        </p>
+        <p>
+          {{favLang}}
+        </p>
+        <p>
+          {{comments}}
+        </p>
+      </div>
+      <p>
+        <button type="button" name="button"><a href="/">Go Back</a></button>
+      </p>
+
+    </main>
+  </body>
+</html>

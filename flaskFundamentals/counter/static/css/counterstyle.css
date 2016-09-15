@@ -1,0 +1,19 @@
+
+.counterBox {
+  width: 50%;
+  text-align: center;
+  margin: auto;;
+  border: 1px solid #D0D0D0;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 8px #D0D0D0;
+}
+
+footer {
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #D0D0D0;
+  line-height: 32px;
+  padding: 0 10px 0 10px;
+  margin: auto;
+}

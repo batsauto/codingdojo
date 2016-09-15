@@ -1,0 +1,12 @@
+body {
+  background-color: rgba(45, 148, 255, 0.18);
+}
+
+div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+main {
+  margin-left: 100px;
+}
