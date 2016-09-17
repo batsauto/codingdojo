@@ -1,0 +1,16 @@
+.activitybox {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+main {
+  padding: 20px;
+  margin: 10px;
+}
+
+.logbox {
+  padding: 5px;
+  border: 1px solid black;
+}
