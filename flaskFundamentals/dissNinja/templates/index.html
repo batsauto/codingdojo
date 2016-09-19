@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Flask</title>
+    <!-- linking a css style sheet -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>World of Ninjas</h1>
+    <p>
+      No Ninjas Here
+    </p>
+    <button type="button" name="button"><a href="/ninja">Ninja Page</a></button>
+  </body>
+</html>
