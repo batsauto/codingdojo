@@ -1,0 +1,5 @@
+Open MAMP, specify which port you want the Database Server to listen to, then start the server.
+Open up MySQL Workbench, create a new connection to the port we specified in the previous step.
+password = root
+There are two main ways to import data into your MySQL Workbench. If you have an SQL file, you can just copy and paste the commands into the editor and click run. If you have an ERD diagram, you can forward engineer into MySQL workbench.
+select * from users(to select all users)
