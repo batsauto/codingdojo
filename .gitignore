@@ -22,6 +22,8 @@
 
 # Logs and databases #
 ######################
+*.mwb
+*.bak
 *.log
 *.sql
 *.sqlite
