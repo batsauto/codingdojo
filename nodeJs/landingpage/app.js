@@ -14,8 +14,15 @@ var server = http.createServer(function (request, response){
             response.end();
         });
     }
-    else if (request.url === "/dojo.html") {
+    else if (request.url === "/dojo") {
          fs.readFile('dojo.html', 'utf8', function (errors, contents){
+             response.writeHead(200, {'Content-type': 'text/html'});
+             response.write(contents);
+             response.end();
+         });
+    }
+    else if (request.url === "/ninjas") {
+         fs.readFile('ninjas.html', 'utf8', function (errors, contents){
              response.writeHead(200, {'Content-type': 'text/html'});
              response.write(contents);
              response.end();
@@ -23,7 +30,7 @@ var server = http.createServer(function (request, response){
     }
     // request didn't match anything:
     else {
-        response.end('File not found!!!');
+        response.end('404 File not found!!!');
     }
 });
 // tell your server which port to run on
