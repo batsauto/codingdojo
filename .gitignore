@@ -62,7 +62,7 @@ Thumbs.db
 *.map
 
 # Ignore the Node Modules folder
-/node_modules
+/.node_modules
 /phantomas
 
 # Ignore Normalize.css
@@ -77,5 +77,5 @@ Thumbs.db
 # Ignore jQuery/debugging folder
 /jQuery/debugging
 
-# phythonSchedule image
-pythonSchedule.tiff
+# bower components
+/.bower_components
