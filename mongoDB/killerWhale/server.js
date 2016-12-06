@@ -6,32 +6,86 @@ var app = express();
 var bodyParser = require('body-parser');
 // Requre mongoose
 var mongoose = require('mongoose');
-// This is how we connect to the mongodb database using mongoose -- "basic_mongoose" is the name of
-//   our db in mongodb -- this should match the name of the db you are going to use for your project.
-mongoose.connect('mongodb://localhost/basic_mongoose');
-// Integrate body-parser with our App
-app.use(bodyParser.urlencoded({ extended: true }));
 // Require path
 var path = require('path');
-// Setting our Static Folder Directory
-app.use(express.static(path.join(__dirname, './static')));
+
+// Integrate body-parser with our App
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // Setting our Views Folder Directory
 app.set('views', path.join(__dirname, './views'));
 // Setting our View Engine set to EJS
 app.set('view engine', 'ejs');
-// Routes
-// Root Request
-app.get('/', function(req, res) {
-    // This is where we will retrieve the users from the database and include them in the view page we will be rendering.
-    res.render('index');
-})
-// Add User Request
-app.post('/users', function(req, res) {
-    console.log("POST DATA", req.body);
-    // This is where we would add the user from req.body to the database.
+
+// This is how we connect to the mongodb database using mongoose -- "basic_mongoose" is the name of
+//   our db in mongodb -- this should match the name of the db you are going to use for your project.
+mongoose.connect('mongodb://localhost/killerWhale_db');
+
+var WhaleSchema = new mongoose.Schema({
+  name: String,
+  color: String,
+  weight: Number
+});
+
+// Routes *********************************************************************
+// Mongoose automatically looks for the plural version of your model name, so a Whale model in Mongoose looks for 'dogs' in Mongo.
+var Whale = mongoose.model('Whale', WhaleSchema);
+
+// Routes go here!
+app.get('/', function(req, res){
+  Whale.find({}, function(err, results){
+    if (err) { console.log(err); }
+    res.render('index', { whales: results });
+  });
+});
+
+// Create
+app.post('/', function(req, res){
+  // Create a new whale!
+  Whale.create(req.body, function(err, result){
+    if (err) { console.log(err); }
+    res.redirect('/')
+  });
+});
+
+// New
+app.get('/new', function(req, res){
+  res.render('new');
+});
+
+// Show
+app.get('/:id', function(req, res){
+  Whale.find({ _id: req.params.id }, function(err, response) {
+    if (err) { console.log(err); }
+    res.render('show', { whale: response[0] });
+  });
+});
+
+app.get('/:id/edit/', function(req, res){
+  Whale.find({ _id: req.params.id }, function(err, response) {
+    if (err) { console.log(err); }
+    res.render('edit', { whale: response[0] });
+  })
+});
+
+// Update
+app.post('/:id', function(req, res){
+  Whale.update({ _id: req.params.id }, req.body, function(err, result){
+    if (err) { console.log(err); }
     res.redirect('/');
-})
+  });
+});
+
+// Delete
+app.post('/:id/delete', function(req, res){
+  Whale.remove({ _id: req.params.id }, function(err, result){
+    if (err) { console.log(err); }
+    res.redirect('/');
+  });
+});
+
+
 // Setting our Server to Listen on Port: 8000
-app.listen(8000, function() {
-    console.log("listening on port 8000");
+app.listen(3000, function() {
+    console.log("listening on port 3000");
 })

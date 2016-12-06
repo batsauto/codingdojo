@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+</head>
+<body>
+  <h1>Index Page!</h1>
+  <a href="/new">Create new whale</a>
+  <!-- Display all whales -->
+  <% for (idx in whale) { %>
+    <p>Name: <a href="/<%= whale[idx]._id %>"><%= whales[idx].name %></a>
+      <a href="/<%= whale[idx]._id %>/edit/">Edit Whale</a>
+      <form action="/<%= whale[idx]._id %>/delete/" method='post'>
+        <input type="submit" value="Delete">
+      </form>
+    </p>
+  <% } %>
+</body>
+</html>
