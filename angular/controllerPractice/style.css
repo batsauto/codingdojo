@@ -1,0 +1,15 @@
+.wrapper{
+  display: inline-block;
+}
+
+.formInput{
+  display: inline-block;
+}
+
+.foodBox{
+  display: inline-block;
+}
+
+h5{
+  display: inline;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>1 Controller</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="wrapper" ng-controller="productsController">
+      <div class="formInput">
+        <h5>Favorite Food</h5>
+        <input type="text" name="favoriteFood" ng-model="newFood.name">
+        <input type="submit" value="add new food" ng-click="addFood()">
+        <h4>Currently Typing:</h4>
+        <p>{{newFood.name}}</p>
+      </div>
+      <div class="foodBox">
+        <ul>
+            <li ng-repeat="food in foods">{{food.name}}</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
