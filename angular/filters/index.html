@@ -6,19 +6,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="crayola.json"></script>
     <script src="app.js"></script>
-
+    <link rel="stylesheet" href="style.css" charset="utf-8">
   </head>
   <body>
     <div class="wrapper" ng-controller="colorController">
-      <input type="text" ng-model="filter_name">
-      <table style="width:100%">
+      <h2>Colors</h2>
+      <input type="text" placeholder="Search for Color" ng-model="filter_name">
+      <table>
         <tr>
           <th>Name</th>
           <th>Hex</th>
           <th>rgb</th>
         </tr>
         <tr ng-repeat="color in colors | filter:filter_name">
-          <td>{{color.name}}</td>
+          <td>{{color.name}}
+              <td id="colorbox" style="background-color:{{color.hex}}"></td>
+          </td>
           <td>{{color.hex}}</td>
           <td>{{color.rgb}}</td>
         </tr>
