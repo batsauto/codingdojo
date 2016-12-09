@@ -17,8 +17,9 @@
         <p>{{newFood.name}}</p>
       </div>
       <div class="foodBox">
+        Search for Food<input type="text" ng-model="filter_name">
         <ul>
-            <li ng-repeat="food in foods">{{food.name}}</li>
+            <li ng-repeat="food in foods| filter:filter_name">{{food.name}}</li>
         </ul>
       </div>
     </div>
