@@ -10,5 +10,5 @@ myAppModule.controller('productsController', function($scope){
   $scope.addFood = function(){
     $scope.foods.push($scope.newFood);
     $scope.newFood = {};
-  }
+  };
 });
