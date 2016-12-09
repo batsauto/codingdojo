@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="crayola.json"></script>
+    <script src="app.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper" ng-controller="colorController">
+      <input type="text" ng-model="filter_name">
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th>Hex</th>
+          <th>rgb</th>
+        </tr>
+        <tr ng-repeat="color in colors | filter:filter_name">
+          <td>{{color.name}}</td>
+          <td>{{color.hex}}</td>
+          <td>{{color.rgb}}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
