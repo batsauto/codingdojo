@@ -15,13 +15,13 @@
       <table>
         <tr>
           <th>Name</th>
+          <th>Color</th>
           <th>Hex</th>
           <th>rgb</th>
         </tr>
         <tr ng-repeat="color in colors | filter:filter_name">
-          <td>{{color.name}}
-              <td id="colorbox" style="background-color:{{color.hex}}"></td>
-          </td>
+          <td>{{color.name}}</td>
+          <td id="colorbox" style="background-color:{{color.hex}}"></td>
           <td>{{color.hex}}</td>
           <td>{{color.rgb}}</td>
         </tr>
