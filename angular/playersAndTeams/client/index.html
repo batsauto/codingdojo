@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="static/CSS/style.css">
+  <script src = "angular/angular.js"></script>
+  <script src = "angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="./js/factories/playerFactory.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/factories/teamFactory.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/controllers/playersController.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/controllers/teamsController.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/controllers/associationsController.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./js/config/routes.js" charset="utf-8"></script>
+</head>
+<body>
+   <a href="players">Players</a> <a href="teams">Teams</a> <a href="associations">Associations</a>
+   <div ng-view=""></div>
+</body>
+</html>
