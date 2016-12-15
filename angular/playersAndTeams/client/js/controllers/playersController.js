@@ -5,8 +5,9 @@ myAppModule.controller("playersController", function($scope, playerFactory) {
     $scope.players = players;
   })
 
-  $scope.addPlayer = function() {
-    playerFactory.addPlayer($scope.newPlayer)
+  $scope.addPlayer = function(callback) {
+    playerFactory.addPlayer($scope.newPlayer);
+    callback($scope.newPlayer);
     $scope.newPlayer = {};
   }
 
