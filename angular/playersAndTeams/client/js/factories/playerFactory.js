@@ -10,23 +10,24 @@ myAppModule.factory("playerFactory", function() {
 
   factory.getPlayers = function(callback) {
     callback(players);
-  }
+};
 
-  factory.addPlayer = function(player) {
-    player.team = "";
-    players.push(player);
-  }
+  factory.addPlayer = function(newPlayer) {
+    newPlayer.team = "";
+    players.push(newPlayer);
+
+};
 
   factory.removePlayer = function($index) {
     players.splice($index, 1);
-  }
+};
 
   factory.addPlayerToTeam = function(data) {
     players[data.playerIdx].team = data.team;
-  }
+};
 
   factory.removePlayerFromTeam = function($index) {
     players[$index].team = "";
-  }
+};
   return factory;
-})
+});

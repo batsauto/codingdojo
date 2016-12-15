@@ -3,15 +3,14 @@ myAppModule.controller("playersController", function($scope, playerFactory) {
 
   playerFactory.getPlayers(function(players) {
     $scope.players = players;
-  })
+});
 
-  $scope.addPlayer = function(callback) {
+  $scope.addPlayer = function() {
     playerFactory.addPlayer($scope.newPlayer);
-    callback($scope.newPlayer);
     $scope.newPlayer = {};
-  }
+};
 
   $scope.removePlayer = function($index) {
     playerFactory.removePlayer($index);
-  }
-})
+};
+});
